@@ -2,11 +2,12 @@
 
 Closed-form Continuous-time Neural Networks (CfCs) are powerful sequential liquid neural information processing units. 
 
-Paper Open Access: https://www.nature.com/articles/s42256-022-00556-7
+Original CfC 
+- Paper Open Access: https://www.nature.com/articles/s42256-022-00556-7
+- Arxiv: https://arxiv.org/abs/2106.13898
+- A Tutorial on Liquid Neural Networks including Liquid CfCs: https://ncps.readthedocs.io/en/latest/quickstart.html
 
-Arxiv: https://arxiv.org/abs/2106.13898
-
-A Tutorial on Liquid Neural Networks including Liquid CfCs: https://ncps.readthedocs.io/en/latest/quickstart.html
+**CfC Improvement done in collaboration with Dr. Christoper Re of the Stanford AI Laboratory**
 
 ## Current Improvements from Base CfC
 
@@ -71,6 +72,7 @@ source download_dataset.sh
 
 ## Cite
 
+- Original CfC Implementation
 ```
 @article{hasani_closed-form_2022,
 	title = {Closed-form continuous-time neural networks},
@@ -81,3 +83,5 @@ source download_dataset.sh
 	year = {2022},
 }
 ```
+
+- CfC Improvement Paper TBD...
