@@ -15,8 +15,8 @@ Original CfC
 	- SELU(x) = λ * (x if x > 0 else α * (exp(x) - 1))
 	- λ and α are constants with specific values that ensure self-normalization.
 - Benefits:
-	- Self-normalization: SELUs encourage the network activations to converge towards zero mean and unit variance, preventing issues like vanishing/exploding gradients.
-	- Sparsity: The "exp(x) - 1" component for negative inputs can lead to sparse activations, potentially improving efficiency and interpretability.
+	- Self-normalization: SELUs encourage the network activations to converge towards zero mean and unit variance, preventing issues like vanishing gradients.
+	- Sparsity: The "exp(x) - 1" component for negative inputs can lead to sparse activations, improving efficiency and interpretability.
 
 ## Requirements
 
