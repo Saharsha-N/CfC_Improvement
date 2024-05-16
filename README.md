@@ -11,7 +11,7 @@ Original CfC
 
 ## Current Improvements from Base CfC
 
-- Integration of SeLU's to minimize the vanishing gradient problem
+- Integration of SeLU's in LSTM hidden layers to minimize the vanishing gradient problem
 	- SELU(x) = λ * (x if x > 0 else α * (exp(x) - 1))
 	- λ and α are constants with specific values that ensure self-normalization.
 - Benefits:
@@ -44,7 +44,7 @@ All training scripts except the following three flags
 - ```no_gate``` Runs the CfC without the (1-sigmoid) part
 - ```minimal``` Runs the CfC direct solution
 - ```use_ltc``` Runs an LTC with a semi-implicit ODE solver instead of a CfC
-- ```use_mixed``` Mixes the CfC's RNN-state with a LSTM to avoid vanishing gradients
+- ```use_mixed``` Mixes the CfC's RNN-state with a SeLU-embedded LSTM to avoid vanishing gradients
 
 If none of these flags are provided, the full CfC model is used
 
